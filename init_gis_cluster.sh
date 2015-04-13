@@ -9,6 +9,10 @@ wget -S -T 10 -t 5 --no-check-certificate -O /home/hadoop/brickhouse-0.6.0.jar h
 
 wget -S -T 10 -t 5 --no-check-certificate -O /home/hadoop/csv-serde-1.1.2-0.11.0-all.jar https://s3-eu-west-1.amazonaws.com/emr-gis-bdigital/bootstrap/csv-serde-1.1.2-0.11.0-all.jar
 
+wget -S -T 10 -t 5 --no-check-certificate -O /home/hadoop/hive-json-serde-0.2.jar https://s3-eu-west-1.amazonaws.com/emr-gis-bdigital/bootstrap/hive-json-serde-0.2.jar
+
+wget -S -T 10 -t 5 --no-check-certificate -O /home/hadoop/hive-contrib-0.13.0.jar https://s3-eu-west-1.amazonaws.com/emr-gis-bdigital/bootstrap/hive-contrib-0.13.0.jar
+
 cp /home/hadoop/esri-git/* /home/hadoop/hive/lib/
 cd /home/hadoop
 wget https://s3-eu-west-1.amazonaws.com/emr-gis-bdigital/bootstrap/init_geo.sql

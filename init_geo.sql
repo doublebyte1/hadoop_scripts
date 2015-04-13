@@ -1,6 +1,8 @@
 add jar /home/hadoop/esri-git/gis-tools-hadoop-2.0.jar;
 add jar /home/hadoop/brickhouse-0.6.0.jar;
 add jar /home/hadoop/csv-serde-1.1.2-0.11.0-all.jar;
+add jar /home/hadoop/hive-json-serde-0.2.jar;
+add jar /home/hadoop/hive-contrib-0.13.0.jar;
 
 create temporary function to_json AS 'brickhouse.udf.json.ToJsonUDF';
 create temporary function  rowSequence as 'org.apache.hadoop.hive.contrib.udf.UDFRowSequence';
